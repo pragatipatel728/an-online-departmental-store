@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="First.css">
+    <title>Sign Up page</title>
+</head>
+<body>
+
+      <form  name="z"  method="post" action="Second.html" onsubmit="return validateform()">
+	<!-- <label> Username: <input type="text"  name="username"></label><br> <br>
+	 <label> Password: <input type="password"  name="password"></label><br> <br>
+	 <label> Email: <input type="text"  name="email"></label><br> <br>
+	 <label> Contactno: <input type="text"  name="contactno"></label><br> <br> -->
+     <script  src="validation.js"></script>
+  
+    
+    <div class="form-box">
+        <h1>Easy Shopping: An Online Departmental Store</h1>
+		<div class="header-text">
+			Sign Up 
+		</div>
+        <input placeholder="Username" type="text"> 
+        <input placeholder="Email_Address" type="text" pattern="[^]+@[^]+[.][a-z]{2,63}$" title =" Invalid Email id " required />
+        <input placeholder="Contact_Number" type="text" pattern="^\d{10}$" title =" Invalid contact no " required /> 
+        <input placeholder="Password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <input id="terms" type="checkbox"> 
+        <label for="terms"></label>
+        <span>Agree with <a href="#">Terms & Conditions</a></span> 
+         <button>Sign Up</button>
+		 <a href="./Second.html"><button>Login</button></a>
+	</div>
+	</form>
+</body>
+</html>
+
+   
